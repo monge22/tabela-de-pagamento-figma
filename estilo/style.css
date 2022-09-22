@@ -1,0 +1,146 @@
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+main {
+    margin: auto;
+    width: 1300px;
+}
+
+.header {
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158);
+    background-color: rgb(29, 83, 158);
+}
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1400px;
+    height: 335px;
+}
+.header__title {
+    color: white;
+    text-align: center;
+    font: 700 48px "Open Sans", sans-serif;
+    
+}
+.header__description{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font: 400 18px "Open Sans", sans-serif;
+    max-width: 553px;
+}
+.td {
+    margin-top: -25px;
+}
+.td__wrapper {
+    margin: auto;
+    width: 1400px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    --height: 470px;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    width: 355px;
+    height: var(--height);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+.card__header {
+    --background-color: transparent;
+    padding-inline: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16%;
+    background-color: var(--background-color);
+}
+.card__planname {
+    font: 600 18px "Open Sans", sans-serif;
+    color: #1E2338;
+}
+.card__cta {
+    height: 32px;
+    background-color: #1D539E;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-inline: 24px;
+    border-radius: 40px;
+    font: 600 12px "Open Sans", sans-serif;
+
+}
+
+.card__price {
+    padding: 10px 31px 20px;
+}
+.card__value {
+    font: 400 18px "Open Sans", sans-serif;
+    color: #828799;
+}
+.card__value strong {
+    font-size: 38px;
+    color: #1E2338;
+}
+.card__value strong span {
+    font-size: 20px;
+}
+.card__price-label {
+    color: #828799;
+    font: 400 14px  "Open Sans", sans-serif;
+    margin-top: 10px;
+}
+
+.card__divider {
+    background-color: #EEEEEE;
+    margin-inline: 30px;
+    height: 1px;
+    border: none;
+}
+
+.card__benefits {
+    --fs: 14px;
+    padding: 20px 30px 0;
+
+}
+.card__benefits-item {
+    color: #828799;
+    font: 600 var(--fs) "Open Sans", sans-serif;
+}
+.card__benefits-item + .card__benefits-item {
+    margin-top: 17px;
+}
+
+.card--featured {
+    --height: 490px;
+    margin-top: -10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card--featured .card__header {
+    --background-color: #FFCC29;
+}
+.card--featured .card__benefits {
+    --fs: 16px;
+}
+.card--featured .card__planname {
+    font-size: 20px;
+    color: #1D539E;
+}
+
